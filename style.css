@@ -4,6 +4,15 @@
 .card-post {
   width: 150px;
 }
+header div ul li img {
+  height: 50px;
+}
+footer ul li img {
+  height: 50px;
+}
+footer ul {
+  list-style: none;
+}
 figure img {
   height: 80px;
 }

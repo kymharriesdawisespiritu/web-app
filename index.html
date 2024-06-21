@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap project</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-info fixed-top border-dark-subtle">
+        <div class="container-fluid bg-info">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">Full Stack Web Dev</a>
+
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Offcanvas
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5">
+      <div
+        class="bg-info starting d-flex justify-content-evenly align-content-center text-center"
+      >
+        <div class="d-flex flex-col justify-content-center align-items-center">
+          <img
+            src="./images/profile pic.jpg"
+            class="rounded"
+            style="width: 50px; height: 50px; object-fit: cover"
+          />
+        </div>
+        <div>
+          <h1>Frontend Web Dev</h1>
+          <p>become a complete Front-end to Back-end web developer</p>
+        </div>
+      </div>
+      <div class="help d-flex justify-content-evenly bg-info">
+        <button type="button" class="btn btn-secondary btn-sm">
+          <a href="#more">More</a>
+        </button>
+        <button type="button" class="btn btn-secondary btn-sm">
+          <a href="#fd">Qeustion?</a>
+        </button>
+      </div>
+      <div class="waves" style="background-color: aquamarine">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#02ced1"
+            fill-opacity="1"
+            d="M0,160L21.8,138.7C43.6,117,87,75,131,58.7C174.5,43,218,53,262,85.3C305.5,117,349,171,393,192C436.4,213,480,203,524,170.7C567.3,139,611,85,655,64C698.2,43,742,53,785,90.7C829.1,128,873,192,916,213.3C960,235,1004,213,1047,176C1090.9,139,1135,85,1178,69.3C1221.8,53,1265,75,1309,80C1352.7,85,1396,75,1418,69.3L1440,64L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"
+          ></path>
+        </svg>
+        <div
+          class="icon info d-flex justify-content-evenly flex-wrap align-content-center text-center"
+        >
+          <figure>
+            <a href="https://mngzz.github.io/WD102-git-sample/"
+              ><img src="./images/question-and-answer-svgrepo-com.svg" alt=""
+            /></a>
+            <figcaption><p>my curiusity</p></figcaption>
+          </figure>
+          <figure>
+            <a href="https://mngzz.github.io/WD102-git-sample/"
+              ><img
+                src="./images/person-reading-a-book-question-mark-svgrepo-com.svg"
+                alt=""
+            /></a>
+            <figcaption><p>explore and research</p></figcaption>
+          </figure>
+          <figure>
+            <a href="https://mngzz.github.io/WD102-git-sample/"
+              ><img
+                src="./images/male-student-studying-question-svgrepo-com.svg"
+                alt=""
+            /></a>
+            <figcaption><p>planning more project</p></figcaption>
+          </figure>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#f0fcf3"
+            fill-opacity="1"
+            d="M0,160L21.8,138.7C43.6,117,87,75,131,58.7C174.5,43,218,53,262,85.3C305.5,117,349,171,393,192C436.4,213,480,203,524,170.7C567.3,139,611,85,655,64C698.2,43,742,53,785,90.7C829.1,128,873,192,916,213.3C960,235,1004,213,1047,176C1090.9,139,1135,85,1178,69.3C1221.8,53,1265,75,1309,80C1352.7,85,1396,75,1418,69.3L1440,64L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="section">
+        <div class="frontend" id="fd">
+          <div class="fst-italic">
+            <h2>Frontend</h2>
+          </div>
+          <div
+            class="icon d-flex justify-content-evenly flex-wrap align-content-center text-center"
+          >
+            <figure>
+              <a href="https://mngzz.github.io/WD102-git-sample/"
+                ><img src="./images/html-svgrepo-com.svg" alt=""
+              /></a>
+              <figcaption><p>World First Website</p></figcaption>
+            </figure>
+            <figure>
+              <a href="https://kymharriesdawisespiritu.github.io/profile/"
+                ><img src="./images/html-5-svgrepo-com.svg" alt=""
+              /></a>
+              <figcaption><p>My profile</p></figcaption>
+            </figure>
+            <figure>
+              <a href="https://kymharriesdawisespiritu.github.io/activity-page/"
+                ><img src="./images/display-layout-svgrepo-com.svg" alt=""
+              /></a>
+              <figcaption><p>Website Layout Using Tables</p></figcaption>
+            </figure>
+            <figure>
+              <a href="https://kymharriesdawisespiritu.github.io/resume/"
+                ><img src="./images/css-svgrepo-com (1).svg" alt=""
+              /></a>
+              <figcaption><p>Resume</p></figcaption>
+            </figure>
+            <figure>
+              <a href="https://kymharriesdawisespiritu.github.io/portfolio/"
+                ><img src="./images/css-svgrepo-com.svg" alt=""
+              /></a>
+              <figcaption><p>portfolio</p></figcaption>
+            </figure>
+            <figure>
+              <a
+                href="https://kymharriesdawisespiritu.github.io/bootstrap-portfolio/"
+                ><img src="./images/bootstrap-4-logo-svgrepo-com.svg" alt=""
+              /></a>
+              <figcaption><p>portfolio w/ bootstrap</p></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="backend">
+          <div class="fst-italic">
+            <h2>Backend</h2>
+          </div>
+          <div
+            class="icon d-flex justify-content-evenly flex-wrap align-content-center text-center"
+          >
+            <figure>
+              <a href="https://mngzz.github.io/WD102-git-sample/"
+                ><img src="./images/python-svgrepo-com.svg" alt=""
+              /></a>
+              <figcaption><p>arcade game</p></figcaption>
+            </figure>
+            <figure>
+              <a href="https://mngzz.github.io/WD102-git-sample/"
+                ><img src="./images/js-official-svgrepo-com (1).svg" alt=""
+              /></a>
+              <figcaption><p>simple canvas line</p></figcaption>
+            </figure>
+          </div>
+          <div class="database">
+            <div class="fst-italic">
+              <h2>Database</h2>
+            </div>
+            <div
+              class="icon d-flex justify-content-evenly flex-wrap align-content-center text-center"
+            >
+              <figure>
+                <a href="https://mngzz.github.io/WD102-git-sample/"
+                  ><img src="./images/database-svgrepo-com.svg" alt=""
+                /></a>
+                <figcaption><p>SQL is none</p></figcaption>
+              </figure>
+              <figure>
+                <a href="https://mngzz.github.io/WD102-git-sample/"
+                  ><img src="./images/mongodb-logo-svgrepo-com.svg" alt=""
+                /></a>
+                <figcaption><p>MongoDb is none</p></figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="api">
+            <div class="fst-italic">
+              <h2>Api</h2>
+            </div>
+            <div
+              class="icon d-flex justify-content-evenly flex-wrap align-content-center text-center"
+            >
+              <figure>
+                <a href="https://mngzz.github.io/WD102-git-sample/"
+                  ><img src="./images/api-interface-svgrepo-com.svg" alt=""
+                /></a>
+                <figcaption><p>SQL is none</p></figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project" id="more">
+        <div class="fst-italic"><h2>More</h2></div>
+        <div
+          class="d-flex justify-content-evenly flex-wrap align-content-center text-center"
+        >
+          <button class="text-anim">
+            <a href="">
+              <img
+                src="./marketing images/All social media promotion.jpg"
+                alt=""
+              />
+            </a>
+          </button>
+          <button>
+            <a href="">
+              <img
+                src="./marketing images/Best Digital Growth Marketing Company in India _ Amura.jpg"
+                alt=""
+              />
+            </a>
+          </button>
+          <button>
+            <a href="">
+              <img
+                src="./marketing images/Diagramme De Graphique De Finances De Graphique D'affaires D'argent Bleu Sur Fond De Pièce De Monnaie 3d D'économie Avec Le Concept De Données Financières De Croissance Ou La Barre De Profit De Marché D'investissem.jpg"
+                alt=""
+              />
+            </a>
+          </button>
+          <button>
+            <a href="">
+              <img
+                src="./marketing images/Business Meeting Meeting Speech, Speak, Computer, Notes Illustration Background And Wallpaper For Free Download - Pngtree.jpg"
+                alt=""
+              />
+            </a>
+          </button>
+          <button>
+            <a href="">
+              <img
+                src="marketing images/Ilustrasi Pengembangan Web Modern, Clipart Internet, Dapat Digunakan Untuk Halaman Arahan, Web PNG dan Vektor dengan Background Transparan untuk Unduh Gratis.jpg"
+                alt=""
+              />
+            </a>
+          </button>
+          <button>
+            <a href="">
+              <img src="./marketing images/SCCMBTo4.jpg" alt="" />
+            </a>
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

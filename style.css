@@ -39,30 +39,26 @@ figure {
   margin-left: -14px;
   font-size: 1.2em;
 }
-.info img {
-  width: 80px;
-}
-.project div button img {
-  height: 200px;
-  width: 300px;
-  object-fit: cover;
+.project div .skills img {
+  height: 100px;
+  box-shadow: 0px 5px 15px rgb(0, 0, 0.25);
 }
 
-.project div:hover > * {
-  filter: grayscale(50%) blur(5px);
+.project .skills:hover > * {
+  filter: grayscale(2%) blur(1px);
+  transform: scale(1);
 }
 .project div > * {
   pointer-events: auto;
-  border: 1px solid black;
   border-radius: 10px;
+  margin: 5px;
 }
-.project div:hover > *:hover {
-  filter: blur(5px);
+.project .skills:hover > *:hover {
+  filter: blur(1px);
   filter: grayscale(0%) opacity(100%);
   transform: scale(1.2);
   animation: pulse 0.3s ease;
-  z-index: 1;
-  box-shadow: 0px 5px 15px rgb(0, 0, 0.25);
+  z-index: 2;
 }
 @keyframes pulse {
   from {

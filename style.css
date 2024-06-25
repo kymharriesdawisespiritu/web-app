@@ -19,6 +19,9 @@ figure img {
 figure {
   width: 80px;
 }
+.profile img {
+  border: 3px solid black;
+}
 .icon figure:hover {
   box-shadow: 0px 5px 15px rgb(0, 0, 0.25);
 }
@@ -60,6 +63,7 @@ figure {
   animation: pulse 0.3s ease;
   z-index: 2;
 }
+
 @keyframes pulse {
   from {
     transform: scale(0.9);
